@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title class='siteTitle'>FireChat</title>
+</head>
+<body onload="read()" >
+  <div class="navbar">
+      <h1>Fire TO-DO</h1>
+  </div>
+
+  <section>
+    <div class="todo-list" id='list'>
+
+      <div class = 'todo-item'>
+        <h3>New Todo:</h3>
+        <h3 class = 'todo-title'><input type="text" id="create-Todo-Title" placeholder="Um título "></h3>
+        <h3>Content:</h3>
+        <p class = 'todo-content'><textarea name="todo-text" id="todo-text" cols="37" rows="10" placeholder="Insira suas lamentações aqui"></textarea></p>
+        
+        <button onclick="createToDo()" class = 'btn'>Criar</button>
+
+      </div>
+
+      <div class = 'todo-item'>
+        <h3 class = 'todo-title'> Um todo com nome inesquecível</h3>
+        <p class = 'todo-content'> Uma lamentação bem grande pois estou sem criatividade no momento</p>
+        <button onclick="deleteTodo()" class = 'btn'>Excluir</button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDfcCX5JAQr0x9XAquNTyS4fFqZ9ZL9M2c",
+    authDomain: "marcos-todo.firebaseapp.com",
+    databaseURL: "https://marcos-todo.firebaseio.com",
+    projectId: "marcos-todo",
+    storageBucket: "marcos-todo.appspot.com",
+    messagingSenderId: "472499826064",
+    appId: "1:472499826064:web:0d6504bb3f50c024161715"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+          
+
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
