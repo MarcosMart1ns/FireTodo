@@ -18,7 +18,7 @@
         <h3>New Todo:</h3>
         <h3 class = 'todo-title'><input type="text" id="create-Todo-Title" placeholder="Um título "></h3>
         <h3>Content:</h3>
-        <p class = 'todo-content'><textarea name="todo-text" id="todo-text" cols="37" rows="10" placeholder="Insira suas lamentações aqui"></textarea></p>
+        <p class = 'todo-content'><textarea name="todo-text" id="todo-text" cols="25" rows="10" placeholder="Insira suas lamentações aqui"></textarea></p>
         
         <button onclick="createToDo()" class = 'btn'>Criar</button>
 
@@ -34,6 +34,7 @@
 
   </section>
 
+  <footer> made by Marcos Martins <a href="http://www.github.com/xMartinezZz"> GitHub--> xMartinezZz</a> </footer>
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -42,20 +43,8 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDfcCX5JAQr0x9XAquNTyS4fFqZ9ZL9M2c",
-    authDomain: "marcos-todo.firebaseapp.com",
-    databaseURL: "https://marcos-todo.firebaseio.com",
-    projectId: "marcos-todo",
-    storageBucket: "marcos-todo.appspot.com",
-    messagingSenderId: "472499826064",
-    appId: "1:472499826064:web:0d6504bb3f50c024161715"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-          
+<script src="./scripts/config.js">
+  
 
 </script>
 

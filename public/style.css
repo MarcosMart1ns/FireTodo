@@ -63,3 +63,12 @@ section{
     background-color:#fff ;
     color: blueviolet;  
 }
+
+footer{
+    width: 100%;
+    background-color: blueviolet;
+    color: #fff;
+}
+a{
+    color: white;
+}
