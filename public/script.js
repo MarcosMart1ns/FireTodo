@@ -90,21 +90,22 @@ async function update(){
     const thisElement = this.parentElement;
     const id = thisElement.id
     const todoItem = document.querySelector(`#${id}`)
-    
+
     let title = document.querySelector(`#${id} .todo-title`);
     let content = document.querySelector(`#${id} .todo-content`)
 
     let inputTitle = document.createElement('input')
-    let inputContent = document.createElement('input')
+    let inputContent = document.createElement('textarea')
 
     inputTitle.value = title.innerHTML;
     inputContent.value = content.innerHTML;
     
-    todoItem.appendChild(inputTitle);
-    todoItem.appendChild(inputContent);
-
     title.remove();
     content.remove();
+    
+    todoItem.insertBefore(inputContent, todoItem.firstChild);
+    todoItem.insertBefore(inputTitle, todoItem.firstChild);
+
 
 }
 
